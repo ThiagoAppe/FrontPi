@@ -1,12 +1,13 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Logo_Leon_Navbar from '../assets/Leon_JPH.png'
 
 const navigation = [
-    { name: 'Inicio', href: '#', current: true },
-    { name: 'AAAAAAAA', href: '#', current: false },
-    { name: 'BBBBBBBB', href: '#', current: false },
-    { name: 'CCCCCCCC', href: '#', current: false },
+    { name: 'HBL 3.0', href: '#', current: true },
+    { name: 'Proximamente', href: '#', current: false },
+    { name: 'Proximamente1', href: '#', current: false },
+    { name: 'Proximamente2', href: '#', current: false },
 ]
 
 
@@ -38,7 +39,7 @@ export default function Example() {
                                 <div className="flex flex-shrink-0 items-center">
                                     <img
                                         className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                                        src={Logo_Leon_Navbar}
                                         alt="Imagen de Logo Para el Front"
                                     />
                                 </div>

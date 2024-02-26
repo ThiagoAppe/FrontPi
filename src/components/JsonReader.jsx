@@ -17,22 +17,28 @@ const JsonReader = ({ data }) => {
         );
     } else if (typeof data === 'object' && data !== null) {
         return (
-            <span className="">
-                <ul className='border-4 border-principal p-6 text-2xl font-mono'>
-                    {Object.entries(data).map(([key, value]) => (
-                        <li key={key} className='flex-row'>
-                            <strong>{key}:</strong>
-                            <JsonReader data={value} />
-                        </li>
-                    ))}
-                </ul>
-            </span>
-
+            <ul className='border-4 border-principal p-6 text-2xl font-mono'>
+                {Object.entries(data).map(([key, value], index) => (
+                    <li key={index} className='flex-row'>
+                        <details>
+                            <summary>
+                                <strong>{key}:</strong>
+                            </summary>
+                            <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                <JsonReader data={value} />
+                            </div>
+                        </details>
+                    </li>
+                ))}
+            </ul>
         );
     } else {
         return <span>{JSON.stringify(data)}</span>;
     }
 };
+
+
+
 
 
 //Me devuelve  el JSON de la url que le paso como parametro y lo devuelvo como prop utilizando JsonReader
