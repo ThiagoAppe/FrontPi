@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
+import './App.css'
 
-const endpoint = 'https://jsonplaceholder.typicode.com/users'
+const endpoint = 'https://raw.githubusercontent.com/ThiagoAppe/FrontPi/main/src/assets/configHBL.json'
 
 const App = () => {
   const [users, setUsers] = useState([])
@@ -15,36 +16,7 @@ const App = () => {
   }, [])
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Name (Username)</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>Website</th>
-        </tr>
-      </thead>
-      <tbody>
-        {users.map(user => (
-          <tr key={user.id}>
-            <td>{user.id}</td>
-            <td>{user.name} ({user.username})</td>
-            <td>
-              <a href={`mailto:${user.email}`}>
-                {user.email}
-              </a>
-            </td>
-            <td>{user.phone}</td>
-            <td>
-              <a href={`https://${user.website}`} target="_blank">
-                {user.website}
-              </a>
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <pre>{JSON.stringify(users, null, 4)}</pre>
   )
 }
 
