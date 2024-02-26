@@ -1,22 +1,21 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import Navbar from './components/NavBar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Content from './components/content'
+
+import JsonReaderWrapper from './components/JsonReader'
 
 const endpoint = 'https://raw.githubusercontent.com/ThiagoAppe/FrontPi/main/src/assets/configHBL.json'
 
 const App = () => {
-  const [users, setUsers] = useState([])
-
-  useEffect(() => {
-    (async () => {
-      const data = await fetch(endpoint)
-        .then(res => res.json())
-
-      setUsers(data)
-    })()
-  }, [])
-
   return (
-    <pre>{JSON.stringify(users, null, 4)}</pre>
+    <> <div className='bg-fondo'>
+      <Navbar />
+      <Content />
+    </div>
+
+
+    </>
   )
 }
 
