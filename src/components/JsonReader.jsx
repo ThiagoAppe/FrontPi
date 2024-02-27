@@ -31,12 +31,12 @@ const JsonReader = ({ data }) => {
     };
 
     return (
-        <div>
-            <ul className='border-4 border-principal p-2 text-2xl font-mono flex justify-between'>
+        <div className='flex'>
+            <ul className='border-4 border-principal p-2 text-2xl font-mono flex-col justify-between'>
                 {Object.entries(data).map(([key], index) => (
                     <li key={index}>
                         <button
-                            className={`text-white bg-botones hover:bg-gray-700 rounded-lg text-sm px-5 py-2.5 ${categoriaSeleccionada === key ? 'border-b-4 border-principal' : ''}`}
+                            className={`m-2 text-white bg-botones hover:bg-gray-700 rounded-lg text-sm px-5 py-2.5 ${categoriaSeleccionada === key ? 'border-b-4 border-principal' : ''}`}
                             onClick={() => handleCategoriaClick(key)}
                         >
                             <strong>{key}</strong>
