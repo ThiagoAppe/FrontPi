@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Navbar from './components/NavBar'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Content from './components/content'
 import Footer from './components/Footer'
 
