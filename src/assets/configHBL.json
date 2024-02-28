@@ -187,7 +187,7 @@
     "LPR": {
         "serial": "pepe"
     }
-    "wiegand": {
+    "wiegand2": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -203,7 +203,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand3": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -219,7 +219,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand4": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -235,7 +235,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand5": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -251,7 +251,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand6": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -267,7 +267,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand7": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -283,7 +283,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand8": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -299,7 +299,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand9": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -315,7 +315,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand10": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -331,7 +331,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand11": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -347,7 +347,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand12": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -363,7 +363,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand13": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -379,7 +379,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand14": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -395,7 +395,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand15": {
         "W1": {
             "activado": 1,
             "modo": "IN",
@@ -411,7 +411,7 @@
             "primerBit": 1
         }
     },
-    "wiegand": {
+    "wiegand16": {
         "W1": {
             "activado": 1,
             "modo": "IN",
