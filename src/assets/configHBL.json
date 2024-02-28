@@ -187,4 +187,245 @@
     "LPR": {
         "serial": "pepe"
     }
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    "wiegand": {
+        "W1": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 5e-05,
+            "delayIntervalo": 0.002,
+            "primerBit": 1
+        },
+        "W2": {
+            "activado": 1,
+            "modo": "IN",
+            "delayPulso": 0.0005,
+            "delayIntervalo": 0.001,
+            "primerBit": 1
+        }
+    },
+    
 }
