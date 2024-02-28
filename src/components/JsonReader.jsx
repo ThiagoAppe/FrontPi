@@ -5,6 +5,7 @@ const endpoint = 'https://raw.githubusercontent.com/ThiagoAppe/FrontPi/main/src/
 
 const JsonReader = ({ data }) => {
     const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
     const handleCategoriaClick = (key) => {
         if (categoriaSeleccionada === key) {
@@ -12,6 +13,7 @@ const JsonReader = ({ data }) => {
         } else {
             setCategoriaSeleccionada(key);
         }
+        setSidebarOpen(false);
     };
 
     const renderDictionary = (dictionary) => {
@@ -29,8 +31,6 @@ const JsonReader = ({ data }) => {
         );
     };
 
-    const [sidebarOpen, setSidebarOpen] = useState(false);
-
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
     };
@@ -41,22 +41,22 @@ const JsonReader = ({ data }) => {
             <div className="sm:hidden">
                 {/* Botón para mostrar/ocultar la barra lateral */}
                 <button
-                    className={`sm:hidden bg-gray-800 text-white p-2 rounded-lg`}
+                    className={`sm:hidden bg-gray-800 text-white p-2 rounded-lg ${sidebarOpen ? 'invisible' : ''}`}
                     onClick={toggleSidebar}
                 >
                     {sidebarOpen ? 'Cerrar' : 'Categorias'}
                 </button>
 
                 {/* Barra lateral */}
-                <div className={`sm:hidden bg-gray-800 p-4 fixed top-0 left-0 bottom-0 right-0 overflow-y-auto ${sidebarOpen ? '' : 'hidden'}`}>
+                <div className={`rounded-r-lg sm:hidden bg-gray-800 p-4 fixed top-20 left-0 overflow-y-auto transition duration-300  ${sidebarOpen ? '' : 'ease-out -translate-x-full'}`}>
                     <nav>
                         <button
-                            className="text-white mb-4 bg-principal rounded-lg text-sm p-2"
+                            className="text-center text-white mb-4 bg-principal rounded-lg text-sm p-2"
                             onClick={toggleSidebar}
                         >Cerrar</button>
                         <div className='flex flex-col'>
                             {Object.entries(data).map(([key], index) => (
-                                <li key={index} className='list-none p-2 text-center'>
+                                <li key={index} className='list-none p-2'>
                                     <button
                                         className={`text-white bg-principal hover:bg-botones rounded-lg text-sm px-5 py-2.5 sm:m-2 sm:text-white sm:bg-botones sm:hover:bg-gray-700 sm:rounded-lg sm:text-sm sm:px-5 sm:py-2.5 ${categoriaSeleccionada === key ? 'sm:border-b-4 sm:border-principal' : ''}`}
                                         onClick={() => handleCategoriaClick(key)}
@@ -83,9 +83,6 @@ const JsonReader = ({ data }) => {
                                 <div className='hidden sm:block'>
                                     <strong>{key}</strong>
                                 </div>
-
-
-
                             </button>
                         </li>
                     ))}
@@ -103,7 +100,6 @@ const JsonReader = ({ data }) => {
         </>
     );
 };
-
 
 const JsonReaderWrapper = () => {
     const [jsonData, setJsonData] = useState([]);
