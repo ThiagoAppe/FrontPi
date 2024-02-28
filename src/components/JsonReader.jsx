@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const endpoint = 'https://raw.githubusercontent.com/ThiagoAppe/FrontPi/main/src/assets/configHBL.json';
@@ -6,6 +6,21 @@ const endpoint = 'https://raw.githubusercontent.com/ThiagoAppe/FrontPi/main/src/
 const JsonReader = ({ data }) => {
     const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const sidebarRef = useRef(null);
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                setSidebarOpen(false);
+            }
+        };
+
+        document.addEventListener('click', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, []);
 
     const handleCategoriaClick = (key) => {
         if (categoriaSeleccionada === key) {
@@ -38,7 +53,7 @@ const JsonReader = ({ data }) => {
     return (
         <>
             {/* Mobile Sidebar */}
-            <div className="sm:hidden">
+            <div className="sm:hidden" ref={sidebarRef}>
                 {/* Botón para mostrar/ocultar la barra lateral */}
                 <button
                     className={`sm:hidden bg-gray-800 text-white p-2 rounded-lg ${sidebarOpen ? 'invisible' : ''}`}
@@ -50,10 +65,6 @@ const JsonReader = ({ data }) => {
                 {/* Barra lateral */}
                 <div className={`rounded-r-lg sm:hidden bg-gray-800 p-4 fixed top-20 left-0 overflow-y-auto transition duration-300  ${sidebarOpen ? '' : 'ease-out -translate-x-full'}`}>
                     <nav>
-                        <button
-                            className="text-center text-white mb-4 bg-principal rounded-lg text-sm p-2"
-                            onClick={toggleSidebar}
-                        >Cerrar</button>
                         <div className='flex flex-col'>
                             {Object.entries(data).map(([key], index) => (
                                 <li key={index} className='list-none p-2'>
