@@ -186,7 +186,7 @@
     },
     "LPR": {
         "serial": "pepe"
-    }
+    },
     "wiegand2": {
         "W1": {
             "activado": 1,
@@ -427,5 +427,4 @@
             "primerBit": 1
         }
     },
-    
 }
